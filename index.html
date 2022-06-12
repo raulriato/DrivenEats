@@ -14,12 +14,12 @@
         <h4>Sua comida em 6 minutos</h4>
     </div>
     <div class="content">
-        <div class="category">
+        <div class="category main">
             <h2>Primeiro, seu prato</h2>
-            <div class="items main">
+            <div class="items">
                 <div class="item" onclick="selectMain(this)" onclick="selectMain(this)">
                     <img src="./images/Milho-cozido.png" alt="">
-                    <h3>Milho Cozido</h3>
+                    <h3 class="name">Milho Cozido</h3>
                     <p>Chega a manteiga derrete</p>
                     <h5>R$ 9,90</h5>
                     <h6 class="price hidden">9.90</h6>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="item" onclick="selectMain(this)">
                     <img src="./images/buraco-quente.jpg" alt="">
-                    <h3>Buraco Quente</h3>
+                    <h3 class="name">Buraco Quente</h3>
                     <p>Pão recheado com Carne moída</p>
                     <h5>R$ 14,90</h5>
                     <h6 class="price hidden">14.90</h6>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="item" onclick="selectMain(this)">
                     <img src="./images/sopa-de-mandioca.jpg" alt="">
-                    <h3>Sopa de Mandioca</h3>
+                    <h3 class="name">Sopa de Mandioca</h3>
                     <p>Sopa com carne e legumes</p>
                     <h5>R$ 18,90</h5>
                     <h6 class="price hidden">18.90</h6>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="item" onclick="selectMain(this)">
                     <img src="./images/cachorro-quente.jpg" alt="">
-                    <h3>Cachorro Quente</h3>
+                    <h3 class="name">Cachorro Quente</h3>
                     <p>Pão, salsicha, batata palha, ketchup e mostarda</p>
                     <h5>R$ 8,90</h5>
                     <h6 class="price hidden">8.90</h6>
@@ -51,12 +51,12 @@
                 </div>
             </div>
         </div>
-        <div class="category">
+        <div class="category drink">
             <h2>Agora, sua bebida</h2>
-            <div class="items drink">
+            <div class="items">
                 <div class="item" onclick="selectDrink(this)">
                     <img src="./images/suco-de-milho-verde.jpg" alt="">
-                    <h3>Suco de Milho</h3>
+                    <h3 class="name">Suco de Milho</h3>
                     <p>Com leite ou água</p>
                     <h5>R$ 8,90</h5>
                     <h6 class="price hidden">8.90</h6>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="item" onclick="selectDrink(this)">
                     <img src="./images/coquinha.jpg" alt="">
-                    <h3>Coquinha</h3>
+                    <h3 class="name">Coquinha</h3>
                     <p>Gelaaaaada!!</p>
                     <h5>R$ 5,00</h5>
                     <h6 class="price hidden">5.90</h6>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="item" onclick="selectDrink(this)">
                     <img src="./images/vinho-quente.jpg" alt="">
-                    <h3>Vinho Quente</h3>
+                    <h3 class="name">Vinho Quente</h3>
                     <p>Pra aquecer a alma</p>
                     <h5>R$ 11,90</h5>
                     <h6 class="price hidden">11.90</h6>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="item" onclick="selectDrink(this)">
                     <img src="./images/quentao.png" alt="">
-                    <h3>Quentão</h3>
+                    <h3 class="name">Quentão</h3>
                     <p>Frio nunca mais!!</p>
                     <h5>R$ 14,90</h5>
                     <h6 class="price hidden">14.90</h6>
@@ -88,12 +88,12 @@
                 </div>
             </div>
         </div>
-        <div class="category">
+        <div class="category dessert">
             <h2>Por fim, sua sobremesa</h2>
-            <div class="items dessert">
+            <div class="items">
                 <div class="item" onclick="selectDessert(this)">
                     <img src="./images/pamonha.jpeg" alt="">
-                    <h3>Pamonha</h3>
+                    <h3 class="name">Pamonha</h3>
                     <p>Sabor da fazenda</p>
                     <h5>R$ 6,90</h5>
                     <h6 class="price hidden">6.90</h6>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="item" onclick="selectDessert(this)">
                     <img src="./images/cural.jpg" alt="">
-                    <h3>Curalzinho</h3>
+                    <h3 class="name">Curalzinho</h3>
                     <p>Porque comer só pamonha enjoa</p>
                     <h5>R$ 9,90</h5>
                     <h6 class="price hidden">9.90</h6>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="item" onclick="selectDessert(this)">
                     <img src="./images/canjica-doce.jpg" alt="">
-                    <h3>Canjiquinha</h3>
+                    <h3 class="name">Canjiquinha</h3>
                     <p>Se não é a melhor sobremesa eu sou um Uno 97 verde</p>
                     <h5>R$ 5,90</h5>
                     <h6 class="price hidden">5.90</h6>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="item" onclick="selectDessert(this)">
                     <img src="./images/bolo-de-fuba-cremoso.jpg" alt="">
-                    <h3>Bolo de Fubá cremoso</h3>
+                    <h3 class="name">Bolo de Fubá cremoso</h3>
                     <p>Com ou sem goiabada</p>
                     <h5>R$ 11,90</h5>
                     <h6 class="price hidden">11.90</h6>
