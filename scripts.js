@@ -8,11 +8,8 @@ function selectMain(item){
         document.querySelector('.main .border .check').classList.add('hidden')
         picked.classList.remove('border');
     }
-    
-    if (picked !== item){
         item.classList.toggle('border');
         document.querySelector('.main .border .check').classList.toggle('hidden')
-    }
     
     pickedMain = document.querySelector('.main .border .name').innerHTML
     priceMain = Number(document.querySelector('.main .border .price').innerHTML)
@@ -29,11 +26,8 @@ function selectDrink(item){
         document.querySelector('.drink .border .check').classList.add('hidden')
         picked.classList.remove('border');
     }
-    
-    if (picked !== item){
         item.classList.toggle('border');
         document.querySelector('.drink .border .check').classList.toggle('hidden')
-    }
     
     pickedDrink = document.querySelector('.drink .border .name').innerHTML
     priceDrink = Number(document.querySelector('.drink .border .price').innerHTML)
@@ -50,11 +44,8 @@ function selectDessert(item){
         document.querySelector('.dessert .border .check').classList.add('hidden')
         picked.classList.remove('border');
     }
-
-    if (picked !== item){
         item.classList.toggle('border');
         document.querySelector('.dessert .border .check').classList.toggle('hidden');
-    }
 
     pickedDessert = document.querySelector('.dessert .border .name').innerHTML
     priceDessert = Number(document.querySelector('.dessert .border .price').innerHTML)
