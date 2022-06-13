@@ -68,7 +68,7 @@ function selectDessert(item){
 function allowOrder(){
     if (pickedMain && pickedDrink && pickedDessert){
         document.querySelector('.order').classList.add('allowed')
-        console.log(document.querySelector('.order'))
+        document.querySelector('.order .button-text').innerHTML = 'Fechar Pedido'
     }
 }
 
