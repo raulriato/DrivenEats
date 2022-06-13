@@ -3,13 +3,11 @@
 body {
         font-family: 'Roboto', sans-serif;
         background-color: #e5e5e5;
-        max-width: 614px;
     }
     
     .top {
         background-color: #CF2B2B;
         width: 100%;
-        max-width: 614px;
         height: 92px;
         position: fixed;
         z-index: 1;
@@ -17,7 +15,6 @@ body {
         left: 0;
         padding-left: 21px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        box-sizing: border-box;
     }
     
     .top h1 {
@@ -36,7 +33,6 @@ body {
     
     .content {
         width: 100%;
-        max-width: 614px;
         margin: 96px 0 112px;
         padding-top: 27px;
         padding-left: 19px;
@@ -78,7 +74,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 18px 0 13px 0;
+        padding: 18px 0 13px;
         position: relative;
         box-sizing: border-box;
     }
@@ -93,7 +89,6 @@ body {
     .item h3 {
         font-size: 16px;
         font-weight: 700;
-        display: inline-block;
         width: 144px;
         text-align: left;
     }
@@ -102,7 +97,6 @@ body {
         font-size: 15px;
         font-weight: 300;
         color: rgba(166, 166, 166, 1);
-        display: inline-block;
         width: 144px;
         text-align: left;
     }
@@ -110,14 +104,12 @@ body {
     .item h5 {
         font-size: 16px;
         font-weight: 400;
-        display: inline-block;
         width: 144px;
         text-align: left;
     }
 
     .bottom {
         width: 100%;
-        max-width: 614px;
         height: 92px;
         background-color: white;
         position: fixed;
@@ -144,7 +136,6 @@ body {
         width: 60%;
         font-size: 20px;
         color: white;
-        box-sizing: border-box;
     }
 
     .border {

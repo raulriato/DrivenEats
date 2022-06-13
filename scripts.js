@@ -4,11 +4,8 @@ let priceMain, priceDrink, priceDessert //global variables to store the price of
 //This function will show the customer the main meal they're picking, in addition to storing the item name and price
 function selectMain(item){
     let picked = document.querySelector('.main .border');
-    //console.log(picked);
     if (picked !== null){
         document.querySelector('.main .border .check').classList.add('hidden')
-        //console.log(document.querySelector('.border .check'))
-        //console.log(document.querySelector('.border .hidden'))
         picked.classList.remove('border');
     }
     
@@ -28,11 +25,8 @@ function selectMain(item){
 //This function will show the customer the drink they're picking, in addition to storing the item name and price
 function selectDrink(item){
     let picked = document.querySelector('.drink .border');
-    //console.log(picked);
     if (picked !== null){
         document.querySelector('.drink .border .check').classList.add('hidden')
-        //console.log(document.querySelector('.border .check'))
-        //console.log(document.querySelector('.border .hidden'))
         picked.classList.remove('border');
     }
     
@@ -54,8 +48,6 @@ function selectDessert(item){
     let picked = document.querySelector('.dessert .border');
     if (picked !== null){
         document.querySelector('.dessert .border .check').classList.add('hidden')
-        //console.log(document.querySelector('.border .check'))
-        //console.log(document.querySelector('.border .hidden'))
         picked.classList.remove('border');
     }
 
@@ -81,7 +73,10 @@ function allowOrder(){
 }
 
 function sendOrder(){
-    const Order = `Olá, gostaria de fazer o pedido:\n- Prato: ${pickedMain}\n- Bebida: ${pickedDrink}\n- Sobremesa: ${pickedDessert}\nTotal: R$ ${(priceMain+priceDrink+priceDessert).toFixed(2)}`
-    const linkString = `https://wa.me/5543999746610?text=${encodeURIComponent(Order)}`
-    window.open(linkString)
+
+    if (pickedMain && pickedDrink && pickedDessert){
+        const Order = `Olá, gostaria de fazer o pedido:\n- Prato: ${pickedMain}\n- Bebida: ${pickedDrink}\n- Sobremesa: ${pickedDessert}\nTotal: R$ ${(priceMain+priceDrink+priceDessert).toFixed(2)}`
+        const linkString = `https://wa.me/5543999746610?text=${encodeURIComponent(Order)}`
+        window.open(linkString)
+    }
 }
